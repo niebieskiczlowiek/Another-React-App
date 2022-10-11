@@ -1,0 +1,25 @@
+@import './../../assets/colors.scss';
+
+.header-container {
+    .header{
+        padding: 10px;
+        background: $blackRed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        h1 {
+            color: $white;
+            font-size: 16px;
+        }
+    }
+    .btn {
+        &--admin {
+            background: $btnAdmin;
+
+            &:hover {
+                background: $btnAdminHover;
+            }
+        }
+    }
+}

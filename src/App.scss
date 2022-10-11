@@ -1,0 +1,32 @@
+@import './assets/colors';
+
+.main{
+    display: flex;
+}
+
+.gallery{
+    display: flex;
+    overflow-x:scroll;
+    width: 1000px;
+    margin: auto;
+}
+
+.gallery > div {
+    margin: 5px; 
+}
+
+.container {
+    padding: 10px 20px;
+}
+
+.button {
+    padding: 8px 14px; 
+    border: none;
+    text-decoration: none;
+    background-color: $btn;
+    color: $white;
+
+    &:hover {
+        background-color: $btnHover;
+    }
+}

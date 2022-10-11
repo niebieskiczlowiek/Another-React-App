@@ -1,0 +1,15 @@
+@import './../../assets/colors.scss';
+
+.gallery-container{
+    .cell{
+        background: $background;
+        width: 400px;
+        height: 250px;
+        border-radius: 7px;
+        margin: 5px;
+
+            &:hover{
+                scale: (1.05)
+            }
+        }
+}

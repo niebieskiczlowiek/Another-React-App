@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Website from './views/website/Website';
-import Admin from './views/admin/Admin';
+import Website from './views/website/';
+import Admin from './views/admin/';
 
 function App() {
   return (
