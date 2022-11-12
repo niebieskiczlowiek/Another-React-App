@@ -1,0 +1,8 @@
+@import './../../assets/colors.scss';
+
+.divider-container{
+    .cell{
+        border-top: 3px solid $background;
+        border-radius: 5px;
+    }
+}

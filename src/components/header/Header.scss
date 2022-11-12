@@ -1,9 +1,10 @@
 @import './../../assets/colors.scss';
 
+
 .header-container {
     .header{
         padding: 10px;
-        background: $blackRed;
+        background: $defaultMain;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -13,12 +14,35 @@
             font-size: 16px;
         }
     }
-    .btn {
-        &--admin {
-            background: $btnAdmin;
+    .button {
+        padding: 8px 14px; 
+        border: none;
+        text-decoration: none;
+        background-color: $defaultButton;
+        color: $white;
+        // &--admin {
+        //     background: $defaultButton;
 
-            &:hover {
-                background: $btnAdminHover;
+        //     &:hover {
+        //         background: $defaultButtonHover;
+        //     }
+        // }
+    }
+}
+.subB-container{
+    .subB{
+        float: right;
+        margin-top: 0px;
+        .button {
+            background: $defaultButton;
+            border-radius: 10px;
+            margin-top: 0px;
+            &--admin {
+                background: $defaultButton;
+    
+                &:hover {
+                    background: $defaultButtonHover;
+                }
             }
         }
     }

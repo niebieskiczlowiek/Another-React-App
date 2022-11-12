@@ -1,32 +1,120 @@
 @import './assets/colors';
 
-.main{
-    display: flex;
+body{
+    background: $defaultMainBg;
 }
 
-.gallery{
-    display: flex;
-    overflow-x:scroll;
-    width: 1000px;
-    margin: auto;
-}
+// .button {
+//     padding: 8px 14px; 
+//     border: none;
+//     text-decoration: none;
+//     background-color: $defaultButton;
+//     color: $white;
 
-.gallery > div {
-    margin: 5px; 
-}
+//     &:hover {
+//         background-color: $defaultButtonHover;
+//     }
+// }
+
 
 .container {
     padding: 10px 20px;
 }
 
-.button {
-    padding: 8px 14px; 
-    border: none;
-    text-decoration: none;
-    background-color: $btn;
-    color: $white;
+//Layouts 
+.shortLayout { 
+    .main{
+        display: flex;
+        height: 740px;
+        justify-content: space-between;
 
-    &:hover {
-        background-color: $btnHover;
+        .lower{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around
+        }
+        
+    }
+}
+
+.defaultLayout{
+    .main{
+        display: flex;  
+        flex-direction: column;
+        margin-bottom: 100px;
+        .lower{
+            margin-bottom: 100px;
+        }
+    }
+}
+
+//Color Themes
+.default{
+    .header-container{
+        .header{
+            background: $defaultMain;
+        }
+        .button{
+            background: $defaultButton;
+
+            &:hover{
+                background: $defaultButtonHover;
+            }
+        }
+    }
+    .profile-container{
+        .profile{
+            background: $defaultBackground;
+        }
+    }
+
+    .footer{
+        background: $defaultFooter;
+    }
+}
+
+.red{
+    .header-container{
+        .header{
+            background: $redMain;
+        }
+        .button{
+            background: $redButton;
+
+            &:hover{
+                background: $redButtonHover;
+            }
+        }
+    }
+    .profile-container{
+        .profile{
+            background: $redBackground;
+        }
+    }
+    .footer{
+        background: $redFooter;
+    }
+}
+
+.blue {
+    .header-container{
+        .header{
+            background: $blueMain;
+        }
+        .button{
+            background: $blueButton;
+
+            &:hover{
+                background: $blueButtonHover;
+            }
+        }
+    }
+    .profile-container{
+        .profile{
+            background: $blueBackground;
+        }
+    }
+    .footer{
+        background: $blueFooter;
     }
 }

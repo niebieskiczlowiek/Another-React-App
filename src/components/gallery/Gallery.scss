@@ -1,15 +1,39 @@
 @import './../../assets/colors.scss';
 
-.gallery-container{
-    .cell{
-        background: $background;
-        width: 400px;
-        height: 250px;
-        border-radius: 7px;
-        margin: 5px;
+// .gallery-container{
+//     .cell{
+//         background: $background;
+//         width: 500px;
+//         height: 350px;
+//         border-radius: 7px;
+//         margin: 5px;
+//     }
+// }
 
-            &:hover{
-                scale: (1.05)
+.shortLayout {
+    .gallery-container{
+        .cell{
+            width: 1000px;
+            align-self: center;
+        }
+    }
+}
+
+.defaultLayout {
+    .gallery-container{
+        align-self: center;
+        align-content: center;
+        margin: 20px; 
+        .cell{
+            background: $background;
+            margin: 20px;
+            height: 350px;
+            border-radius: 7px;
+            margin: 5px;
+
+            .twitter-profile{
+                width: 500px;
             }
         }
+    }
 }
