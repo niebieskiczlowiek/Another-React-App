@@ -5,7 +5,7 @@ import Context from './../../context/App.context';
 import { useContext} from 'react';
 
 const Admin = () => {
-    const { colorTheme } = useContext(Context);
+    const { colorTheme, fullScreenState } = useContext(Context);
     let themeClass;
 
     let themes = {
@@ -23,8 +23,7 @@ const Admin = () => {
     return (
         <div className='App'>
             <div className={themeClass}>
-                <Header title={'Admin'} />
-                <SubButton title={'Admin'}/>
+                { fullScreenState ? <Header title={'Admin'} /> : <SubButton title={'Admin'}/> }
                 <Panel title={'Admin'} />
             </div>
         </div>

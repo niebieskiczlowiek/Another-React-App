@@ -4,17 +4,17 @@ body{
     background: $defaultMainBg;
 }
 
-// .button {
-//     padding: 8px 14px; 
-//     border: none;
-//     text-decoration: none;
-//     background-color: $defaultButton;
-//     color: $white;
+.button {
+    padding: 8px 14px; 
+    border: none;
+    text-decoration: none;
+    background-color: $defaultButton;
+    color: $white;
 
-//     &:hover {
-//         background-color: $defaultButtonHover;
-//     }
-// }
+    &:hover {
+        background-color: $defaultButtonHover;
+    }
+}
 
 
 .container {
@@ -66,6 +66,9 @@ body{
         .profile{
             background: $defaultBackground;
         }
+        .baner{
+            background: $defaultMain;
+        }
     }
 
     .footer{
@@ -74,6 +77,7 @@ body{
 }
 
 .red{
+
     .header-container{
         .header{
             background: $redMain;
@@ -86,11 +90,17 @@ body{
             }
         }
     }
+    
     .profile-container{
         .profile{
             background: $redBackground;
+
+                .baner{
+                    background: $redMain;
+                }
         }
     }
+
     .footer{
         background: $redFooter;
     }
@@ -112,6 +122,9 @@ body{
     .profile-container{
         .profile{
             background: $blueBackground;
+        }
+        .baner{
+            background: $blueMain
         }
     }
     .footer{

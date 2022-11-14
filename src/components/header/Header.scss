@@ -20,29 +20,11 @@
         text-decoration: none;
         background-color: $defaultButton;
         color: $white;
-        // &--admin {
-        //     background: $defaultButton;
-
-        //     &:hover {
-        //         background: $defaultButtonHover;
-        //     }
-        // }
-    }
-}
-.subB-container{
-    .subB{
-        float: right;
-        margin-top: 0px;
-        .button {
+        &--admin {
             background: $defaultButton;
-            border-radius: 10px;
-            margin-top: 0px;
-            &--admin {
-                background: $defaultButton;
-    
-                &:hover {
-                    background: $defaultButtonHover;
-                }
+
+            &:hover {
+                background: $defaultButtonHover;
             }
         }
     }

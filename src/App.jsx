@@ -15,7 +15,7 @@ function App() {
   const [ profileBio, setProfileBio ] = useState('');
   const [ userName, setUserName ] = useState('User');
   const [ fullScreenState, setFullScreenState ] = useState(true);
-  const [ layout, setLayout ] = useState('short');
+  const [ layout, setLayout ] = useState('default');
   const [ banerState, setBanerState ] = useState(false);
   const [ banerContent, setBanerContent ] = useState('');
 

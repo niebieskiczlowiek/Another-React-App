@@ -8,7 +8,7 @@ import { useContext} from 'react';
 import '../../App.scss'
 
 const Website = () => {
-    const { colorTheme, layout } = useContext(Context);
+    const { colorTheme, layout, twitterProfileState, fullScreenState } = useContext(Context);
     let themeClass;
     let divLayout;
 
@@ -39,12 +39,11 @@ const Website = () => {
         <div className="App">
             <div className={themeClass}>
                 <div className={divLayout}>
-                    <Header title={'Website'} />
-                    <SubButton title={'Website'}/>
+                    { fullScreenState ? <Header title={'Website'} /> : <SubButton title={'Website'}/> }
                     <div className="main">
                         <Profile title={'Website'} />
                         <div className="lower">
-                            <Gallery title={'Website'} />
+                            {twitterProfileState ? <Gallery title={'Website'} /> : null}
                         </div>
                     </div>
                 </div>

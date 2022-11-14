@@ -1,19 +1,9 @@
 @import './../../assets/colors.scss';
 
-// .gallery-container{
-//     .cell{
-//         background: $background;
-//         width: 500px;
-//         height: 350px;
-//         border-radius: 7px;
-//         margin: 5px;
-//     }
-// }
-
 .shortLayout {
     .gallery-container{
         .cell{
-            width: 1000px;
+            width: 1400px;
             align-self: center;
         }
     }

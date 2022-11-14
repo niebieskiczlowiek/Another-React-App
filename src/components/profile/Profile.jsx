@@ -24,9 +24,7 @@ const Profile = (props) => {
                             <div className="info">
                                 <h2 class="usernameHeader">{userName}</h2>
                                 <div className="userBio">
-                                    <blockquote>
-                                        {profileBio}
-                                    </blockquote>
+                                    <p> {profileBio} </p>
                                 </div>
                             </div>
                         </div>

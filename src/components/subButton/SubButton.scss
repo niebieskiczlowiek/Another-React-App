@@ -1,0 +1,53 @@
+@import './../../assets/colors.scss';
+
+.subB-container{
+    .subB{
+        float: right;
+        margin-top: 0px;
+        position: fixed;
+        right: 0;
+        animation: hideSubB 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        z-index: 1;
+        height: 50px;
+
+        &:hover{
+            animation: showSubB 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+        .button {
+            padding: 8px 14px; 
+            border: none;
+            text-decoration: none;
+            background-color: $defaultButton;
+            color: $white;
+            &--admin {
+                background: $defaultButton;
+    
+                &:hover {
+                    background: $defaultButtonHover;
+                }
+            }
+        }
+    }
+}
+
+  @keyframes hideSubB {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-25px);
+              transform: translateY(-25px);
+    }
+  }
+
+  @keyframes showSubB {
+    0% {
+      -webkit-transform: translateY(-25px);
+              transform: translateY(-25px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
